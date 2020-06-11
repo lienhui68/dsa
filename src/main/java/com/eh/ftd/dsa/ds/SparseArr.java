@@ -102,10 +102,12 @@ public class SparseArr {
 
 
     public static void main(String[] args) {
-        // 构造原始棋盘
+        // 构造原始棋盘 0-空格 1-白子 2-黑子
         int[][] chessBoard = new int[11][11];
         chessBoard[1][2] = 1;
         chessBoard[2][3] = 2;
+        chessBoard[5][5] = 2;
+        chessBoard[7][8] = 1;
         System.out.println("=======原始棋盘==========");
         printChessBoard(chessBoard);
         // 转换成稀疏数组
